@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">In and Out</string>
+    <string name="place_order">Place an Order</string>
+    <string name="double_bgr">Double Double</string>
+    <string name="cheese_bgr">Cheese Burger</string>
+    <string name="fries">French Fries</string>
+    <string name="shake">Shakes</string>
+    <string name="soda">Fountain Drinks (pick size)</string>
+    <string name="soda_small">Small</string>
+    <string name="soda_medium">Medium</string>
+    <string name="soda_large">Large</string>
+    <string name="order_button">Place Order</string>
+    <string name="order">Items Ordered: </string>
+    <string name="subtotal">Subtotal: </string>
+    <string name="tax_rate">Tax: </string>
+    <string name="new_order_button">Start New Order</string>
+    <string name="total">Order Total:</string>
+    <string name="items">Items Ordered:</string>
 </resources>
