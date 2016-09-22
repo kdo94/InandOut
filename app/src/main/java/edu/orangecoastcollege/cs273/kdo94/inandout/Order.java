@@ -11,14 +11,14 @@ public class Order {
     private int mMediumDrinks;
     private int mSmallDrinks;
     private int mShakes;
-    private double PRICE_DOUBLE_DOUBLE = 3.60;
-    private double PRICE_CHEESEBURGER = 2.15;
-    private double PRICE_FRENCH_FRIES = 1.65;
-    private double PRICE_LARGE_DRINK = 1.75;
-    private double PRICE_MEDIUM_DRINK = 1.55;
-    private double PRICE_SMALL_DRINK = 1.45;
-    private double PRICE_SHAKES = 2.20;
-    private double TAX_RATE = 0.08;
+    public final double PRICE_DOUBLE_DOUBLE = 3.60;
+    public final double PRICE_CHEESEBURGER = 2.15;
+    public final double PRICE_FRENCH_FRIES = 1.65;
+    public final double PRICE_LARGE_DRINK = 1.75;
+    public final double PRICE_MEDIUM_DRINK = 1.55;
+    public final double PRICE_SMALL_DRINK = 1.45;
+    public final double PRICE_SHAKES = 2.20;
+    public final double TAX_RATE = 0.08;
 
     public Order(){
         mCheeseburgers = 0;

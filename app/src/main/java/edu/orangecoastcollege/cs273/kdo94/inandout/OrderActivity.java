@@ -21,7 +21,7 @@ public class OrderActivity extends AppCompatActivity {
     private EditText sodaLargeEditText;
 
     private TextView doubleCostTextView;
-    private TextView cheestCostTextView;
+    private TextView cheeseCostTextView;
     private TextView friesCostTextView;
     private TextView shakesCostTextView;
     private TextView sodaSmallCostTextView;
@@ -32,6 +32,16 @@ public class OrderActivity extends AppCompatActivity {
 
     private String totalText;
     private String totalSummary;
+
+    private double cheeseCost;
+    private double doubleCost;
+    private double friesCost;
+    private double shakesCost;
+    private double smallCost;
+    private double mediumCost;
+    private double largeCost;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +56,23 @@ public class OrderActivity extends AppCompatActivity {
         sodaMediumEditText = (EditText) findViewById(R.id.sodaMediumEditText);
         sodaLargeEditText = (EditText) findViewById(R.id.sodaLargeEditText);
 
+        doubleCostTextView = (TextView) findViewById(R.id.doubleCostTextView);
+        cheeseCostTextView = (TextView) findViewById(R.id.cheeseCostTextView);
+        friesCostTextView = (TextView) findViewById(R.id.friesCostTextView);
+        shakesCostTextView = (TextView) findViewById(R.id.shakesCostTextView);
+        sodaSmallCostTextView = (TextView) findViewById(R.id.sodaSmallCostTextView);
+        sodaMediumCostTextView = (TextView) findViewById(R.id.sodaMediumCostTextView);
+        sodaLargeCostTextView = (TextView) findViewById(R.id.sodaLargeCostTextView);
+
         currentOrder = new Order();
+
+        doubleCostTextView.setText(currency.format(currentOrder.PRICE_DOUBLE_DOUBLE).toString());
+        cheeseCostTextView.setText(currency.format(currentOrder.PRICE_CHEESEBURGER).toString());
+        friesCostTextView.setText(currency.format(currentOrder.PRICE_FRENCH_FRIES).toString());
+        shakesCostTextView.setText(currency.format(currentOrder.PRICE_SHAKES).toString());
+        sodaSmallCostTextView.setText(currency.format(currentOrder.PRICE_SMALL_DRINK).toString());
+        sodaMediumCostTextView.setText(currency.format(currentOrder.PRICE_MEDIUM_DRINK).toString());
+        sodaLargeCostTextView.setText(currency.format(currentOrder.PRICE_LARGE_DRINK).toString());
     }
 
     public void activateOrderSummary(View view){
@@ -104,7 +130,7 @@ public class OrderActivity extends AppCompatActivity {
 
         totalSummary = getString(R.string.order) + currentOrder.getOrder() + "\n" +
                         getString(R.string.subtotal) + currency.format(currentOrder.calculateSubTotal()) + "\n" +
-                        getString(R.string.tax_rate) + currency.format(currentOrder.calculateTax());
+                        getString(R.string.tax_rate) + "(" + (currentOrder.TAX_RATE * 100) + "%)" + currency.format(currentOrder.calculateTax());
     }
 
 }
