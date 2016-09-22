@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">In and Out</string>
+    <string name="cheese_bgr">Hamburguesa con queso</string>
+    <string name="double_bgr">Doble Hamburguesa con queso</string>
+    <string name="fries">Papas Fritas</string>
+    <string name="items">Artículos ordenados:</string>
+    <string name="new_order_button">Comenzar una nueva orden:</string>
+    <string name="order">Artículos ordenados:</string>
+    <string name="order_button">Coloque una orden:</string>
+    <string name="place_order">Coloque una orden:</string>
+    <string name="shake">Batidos</string>
+    <string name="soda">Soda (tamaño de recogida)</string>
+    <string name="soda_large">Grande</string>
+    <string name="soda_medium">Medio</string>
+    <string name="soda_small">Pequeña</string>
+    <string name="subtotal">Total Parcial:</string>
+    <string name="tax_rate">Impuesto:</string>
+    <string name="total">Total del pedido:</string>
+</resources>
